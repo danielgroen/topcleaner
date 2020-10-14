@@ -74,7 +74,7 @@ a {
 }
 .kvk {
   position: absolute;
-  left: -50%;
+  left: calc(-50% + 30px);
   top: 53%;
   width: 100%;
   color: #979797;
