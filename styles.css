@@ -71,7 +71,8 @@ a:hover {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 428px;
+  max-width: 428px;
+  width: calc(100% - 20px);
   z-index: 2;
 }
 
@@ -171,10 +172,16 @@ a:hover {
 }
 .bussinesscard .front .contact {
   color: #2a2b39;
-  margin-left: 1.7em;
+  margin-left: 10px;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 17px;
   transform: translateY(400%);
+}
+@media screen and (min-width: 500px) {
+  .bussinesscard .front .contact {
+    margin-left: 1.7em;
+    font-size: 20px;
+  }
 }
 .bussinesscard .front .contact span {
   color: #2D3244;

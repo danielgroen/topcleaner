@@ -69,7 +69,8 @@ a {
 	position: absolute;
 	left: 50%;
 	top: 50%;	
-  width:428px;	
+  max-width:428px;
+  width: calc(100% - 20px);
   z-index: 2;
 }
 .kvk {
@@ -168,10 +169,15 @@ a {
 		}
 		.contact {
 				color: $secondarycolor;				
-				margin-left: 1.7em;
+				margin-left: 10px;
 				font-weight: 300;
-				font-size: 20px;
-				transform: translateY(400%);
+				font-size: 17px;
+        transform: translateY(400%);
+        
+        @media screen and (min-width: 500px){
+          margin-left: 1.7em;
+          font-size: 20px;
+        }
 				span {
 					color: #2D3244;
 					font-size: 1.7em;
