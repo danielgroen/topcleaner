@@ -1,0 +1,25 @@
+{
+  "name": "topcleaner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js.js",
+  "scripts": {
+    "start": "npx sass styles.scss styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielgroen/topcleaner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielgroen/topcleaner/issues"
+  },
+  "homepage": "https://github.com/danielgroen/topcleaner#readme",
+  "devDependencies": {
+    "sass": "^1.27.0"
+  },
+  "dependencies": {
+    "compass": "^0.1.1"
+  }
+}

@@ -1,0 +1,239 @@
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import url(https://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css);
+::selection {
+  color: #fff;
+  background: #2a2b39;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #2a2b39;
+}
+
+body, html {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  height: 120px;
+}
+
+svg {
+  height: 27px;
+  fill: #2a2b39;
+}
+
+.bg {
+  background: url(./assets/pexels-karolina-grabowska-4239131.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 65%;
+}
+
+.bgtint {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(42, 43, 57, 0.7);
+  z-index: 1;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+a {
+  color: #2a2b39;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+a:hover {
+  color: #2a2b39;
+}
+
+.business-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 428px;
+  z-index: 2;
+}
+
+.kvk {
+  position: absolute;
+  left: -50%;
+  top: 53%;
+  width: 100%;
+  color: #979797;
+  font-size: 13px;
+}
+
+.bussinesscard {
+  height: 320px;
+  overflow: hidden;
+  box-shadow: 0px 0px 43px -10px black;
+  transform: translate(-50%, -50%);
+}
+.bussinesscard .flip {
+  transition: all 0.5s ease;
+}
+.bussinesscard .front {
+  z-index: 11;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0px 0px 33px -1px rgba(0, 0, 0, 0.45);
+  transform: scale(1);
+  transition: all 0.6s ease;
+}
+.bussinesscard .front .top {
+  height: 50%;
+  background: #2a2b39;
+}
+.bussinesscard .front .top:after {
+  position: absolute;
+  pointer-events: none;
+}
+.bussinesscard .front .top:after {
+  left: 50%;
+  width: 2em;
+  height: 2em;
+  transform: translateX(-50%), rotate(45deg);
+  bottom: 9em;
+  z-index: 10;
+  background: inherit;
+}
+.bussinesscard .front .top .logo {
+  display: inline-block;
+  background: #2a2b39;
+  color: #fff;
+  z-index: 11;
+  padding: 5px;
+  border: 8px solid #fff;
+  position: relative;
+  pointer-events: none;
+  transform: translateX(-51%);
+  left: 50%;
+  margin-top: 40px;
+  font-size: 4em;
+}
+.bussinesscard .front .top .logo .fat {
+  font-weight: 800;
+}
+.bussinesscard .front .top .logo .skinny {
+  font-weight: 100;
+}
+.bussinesscard .front .nametroduction {
+  margin-top: 2.4em;
+  transform: translateY(0);
+  z-index: 8;
+}
+.bussinesscard .front .name {
+  color: #2a2b39;
+  font-weight: 400;
+  font-size: 3.2em;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0.35em;
+}
+.bussinesscard .front .name:after {
+  content: "";
+  position: absolute;
+  top: 1.3em;
+  width: 20%;
+  left: 40%;
+  right: 40%;
+  height: 1px;
+  background: #2a2b39;
+}
+.bussinesscard .front .introduction {
+  text-align: center;
+  color: #2a2b39;
+  font-family: "Old Standard TT", serif;
+  font-style: italic;
+}
+.bussinesscard .front .contact {
+  color: #2a2b39;
+  margin-left: 1.7em;
+  font-weight: 300;
+  font-size: 20px;
+  transform: translateY(400%);
+}
+.bussinesscard .front .contact span {
+  color: #2D3244;
+  font-size: 1.7em;
+  width: 1.3em;
+  text-align: center;
+  display: inline-block;
+}
+.bussinesscard .front .contact a {
+  position: relative;
+  bottom: 0.24em;
+}
+.bussinesscard .back {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.tooltip {
+  position: absolute;
+  left: 1em;
+  bottom: 1em;
+  color: #fff;
+  font-weight: 300;
+  padding: 0.4em;
+  background: #2a2b39;
+}
+
+/* HOVER ANIMATIONS */
+.front .top .logo, .front .top, .front .top:after, .front .nametroduction, .front .contact {
+  transition: 0.7s all ease-in-out;
+}
+
+.flip:hover .front .top .logo {
+  margin-top: 0.28em;
+  font-size: 1.3em;
+  border: 3px solid #fff;
+  margin-left: 0.15em;
+  transform: translateX(-24px) scale(0.5) translateY(-40px);
+  left: 0;
+}
+
+.flip:hover .front .top {
+  height: 15%;
+}
+.flip:hover .front .top:after {
+  width: 1.5em;
+  height: 1.5em;
+  bottom: 16.3em;
+}
+
+.flip:hover .front .nametroduction {
+  transform: translateY(400%);
+}
+
+.flip:hover .front .contact {
+  transform: translateY(-52%);
+}
+
+/*# sourceMappingURL=styles.css.map */
